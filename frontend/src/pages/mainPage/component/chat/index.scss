@@ -1,0 +1,15 @@
+.chat-app {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 130px);
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.approve-button{
+    width: 120px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,78 @@
+/* Circle Progress Bar */
+.progress-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.circle.active .circle-number {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 91vh;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+
+.help-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 270px;
+}
+
+.input-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+}
+
+.input-container-final-step {
+  width: 99% !important;
+  padding: 15px;
+  margin-top: 80px;
+}
+
+.inout_5_container {
+  margin: auto;
+  width: 40%;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 1rem;
+  background-color: #F8F9FAFF;
+  resize: none;
+}
+
+.send-btn {
+  position: absolute;
+  right: -25px;
+  bottom: 11px;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  display: block !important;
+  padding: 20px;
+  background-color: #ffffff;
+}

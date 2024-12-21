@@ -1,0 +1,296 @@
+General Reset * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+/* Workflow Section */
+.workflow-container {
+  /* width: 1650px; */
+  width: 87%;
+  margin: 2rem auto;
+  padding: 32px;
+  background: #F8F9FAFF;
+  /* neutral-150 */
+  border-radius: 10px;
+  /* border-l */
+  border-width: 1px;
+  border-color: #9095A0FF;
+  /* neutral-500 */
+  border-style: solid;
+  box-shadow: 0px 4px 9px #171a1f1C, 0px 0px 2px #171a1f1F;
+  /* shadow-m */
+  height: 255px;
+}
+
+.workflow-steps {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.step-circle {
+  background-color: #3b82f6;
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.step-title {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.workflow-input {
+  min-width: 96%;
+  max-width: 96%;
+  /* padding: 0.75rem; */
+  padding: 28px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #FFFFFFFF;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.workflow-input::placeholder {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 2rem;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.create-button {
+  width: 165px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 24px;
+  color: #FFFFFFFF;
+  /* white */
+  background: #636AE8FF;
+  /* primary-500 */
+  border: none;
+  border-radius: 10px;
+  /* border-l */
+}
+
+.create-button:hover {
+  color: #FFFFFFFF;
+  /* white */
+  background: #4850E4FF;
+  /* primary-550 */
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.css-3hpdci-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  outline-style: double;
+  outline-color: #3b82f6;
+}
+
+.wave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: wave 2s infinite linear;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+/* .ai-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.ai-card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  background-color: #d1d5db;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+} */
+
+/* Responsive Design */
+
+/* For small screens (phones) */
+@media (max-width: 600px) {
+
+  .workflow-container,
+  .ai-library-container {
+      width: 95%;
+      padding: 1rem;
+  }
+
+  .workflow-steps {
+      flex-direction: column;
+  }
+
+  .step-circle {
+      width: 2rem;
+      height: 2rem;
+  }
+
+  .step-title {
+      font-size: 0.7rem;
+      margin-top: 0.3rem;
+  }
+
+  .workflow-input {
+      min-width: 100%;
+      max-width: 100%;
+      font-size: 16px;
+      padding: 1rem;
+  }
+
+  .create-button {
+      width: 140px;
+      font-size: 18px;
+  }
+
+  .ai-card-grid {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+  }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .workflow-container,
+  .ai-library-container {
+      width: 90%;
+      padding: 1.5rem;
+  }
+
+  .workflow-steps {
+      justify-content: space-around;
+  }
+
+  .step-circle {
+      width: 2.2rem;
+      height: 2.2rem;
+  }
+
+  .step-title {
+      font-size: 0.75rem;
+  }
+
+  .workflow-input {
+      min-width: 98%;
+      max-width: 98%;
+      font-size: 18px;
+      padding: 1.25rem;
+  }
+
+  .create-button {
+      width: 150px;
+      font-size: 20px;
+  }
+
+  .ai-card-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+  }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 1025px) {
+
+  .workflow-container,
+  .ai-library-container {
+      width: 87%;
+      padding: 2rem;
+  }
+
+  .workflow-steps {
+      justify-content: space-between;
+  }
+
+  .step-circle {
+      width: 2.5rem;
+      height: 2.5rem;
+  }
+
+  .step-title {
+      font-size: 0.8rem;
+  }
+
+  .workflow-input {
+      min-width: 96%;
+      max-width: 96%;
+      font-size: 20px;
+      padding: 1.75rem;
+  }
+
+  .create-button {
+      width: 165px;
+      font-size: 24px;
+  }
+
+  .ai-card-grid {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+  }
+}

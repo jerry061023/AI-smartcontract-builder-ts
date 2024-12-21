@@ -1,0 +1,36 @@
+.chat-history {
+    margin-top: 80px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto; // Enables scrolling for long messages
+}
+
+.chat-message {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+    tab-size: 4;
+
+    &.user-message {
+        align-self: flex-end;
+        background-color: #eaeaea;
+        color: #333;
+    }
+
+    &.other-message {
+        align-self: flex-start;
+        color: #333;
+    }
+
+    .message-content {
+        word-wrap: break-word; // Wraps long words within the bubble
+        white-space: pre-wrap;
+    }
+}
